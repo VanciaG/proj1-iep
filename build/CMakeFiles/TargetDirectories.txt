@@ -1,0 +1,6 @@
+/home/gabi/Desktop/proj1/build/CMakeFiles/rebuild_cache.dir
+/home/gabi/Desktop/proj1/build/CMakeFiles/lib3.dir
+/home/gabi/Desktop/proj1/build/CMakeFiles/lib2.dir
+/home/gabi/Desktop/proj1/build/CMakeFiles/edit_cache.dir
+/home/gabi/Desktop/proj1/build/CMakeFiles/proj1.dir
+/home/gabi/Desktop/proj1/build/CMakeFiles/lib1.dir

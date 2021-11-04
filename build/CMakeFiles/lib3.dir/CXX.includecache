@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gabi/Desktop/proj1/inc/device.hpp
+string
+-
+cstring
+-
+cstdlib
+-
+
+/home/gabi/Desktop/proj1/inc/televizor.hpp
+string
+-
+cstring
+-
+cstdlib
+-
+device.hpp
+/home/gabi/Desktop/proj1/inc/device.hpp
+
+/home/gabi/Desktop/proj1/src/televizor.cpp
+../inc/televizor.hpp
+/home/gabi/Desktop/proj1/inc/televizor.hpp
+iostream
+-
+

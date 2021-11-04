@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gabi/Desktop/proj1/inc/device.hpp
+string
+-
+cstring
+-
+cstdlib
+-
+
+/home/gabi/Desktop/proj1/src/device.cpp
+../inc/device.hpp
+/home/gabi/Desktop/proj1/inc/device.hpp
+iostream
+-
+
