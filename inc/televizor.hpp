@@ -35,6 +35,8 @@ public:
        
     
     ~televizor(); 
+
+    televizor& operator=(const televizor &dev);
     
     
     void showInfo();

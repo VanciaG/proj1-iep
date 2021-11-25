@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/proj1.dir/src/main.cpp.o  -o proj1  liblib1.a liblib2.a liblib3.a 

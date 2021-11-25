@@ -23,6 +23,8 @@ public:
     telefon(const telefon &dev);
 
     ~telefon(); 
+
+    telefon& operator=(const telefon &dev);
     
     void showInfo();
 };

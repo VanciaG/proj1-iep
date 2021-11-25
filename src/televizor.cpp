@@ -35,12 +35,23 @@ televizor::televizor(const televizor &dev) : device(dev.pret) {
 televizor::~televizor(){
     cout << "Televizor destroyed\n";
 }   
-    
-    void televizor::showInfo(){
-        
-        cout  << "Televizor, pret=" << device::showPret()<< " lei, " << "producator= " <<producator<< "\n";
-        
+
+televizor& televizor::operator=(const televizor &dev) {
+        if(this == &dev){
+            cout << "self-assignment\n";
+            return *this;
+        }
+        pret = dev.pret;
+        producator = new char[strlen(dev.producator) + 1];
+        strcpy(producator, dev.producator);
+        return *this;
     }
+    
+void televizor::showInfo(){
+        
+    cout  << "Televizor, pret=" << device::showPret()<< " lei, " << "producator= " <<producator<< "\n";
+        
+}
 
 
 

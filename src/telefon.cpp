@@ -22,16 +22,30 @@ telefon::telefon(int m) : device() {
 telefon::telefon(const telefon &dev) : device(dev.pret) {
         mem = dev.mem;
     }
-    
-	void telefon::showInfo(){
-        
-        cout  << "Telefon, pret=" << device::showPret()<< " lei, " << "mem=" << mem << "\n";
-        
-    }
 
 telefon::~telefon(){
     cout << "Telefon destroyed\n";
 }
+
+telefon& telefon::operator=(const telefon &dev) {
+        if(this == &dev){
+            cout << "self-assignment\n";
+            return *this;
+        }
+        pret = dev.pret;
+        mem = dev.mem;
+        return *this;
+    }
+    
+void telefon::showInfo(){
+        
+    cout  << "Telefon, pret=" << device::showPret()<< " lei, " << "mem=" << mem << "\n";
+        
+    }
+
+
+
+
     
 
 
