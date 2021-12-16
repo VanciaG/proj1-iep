@@ -5,6 +5,7 @@
 #include <cstring>
 #include <cstdlib>
 #include "device.hpp"
+#include <memory>
 
 using namespace std;
 
@@ -37,7 +38,12 @@ public:
     televizor& operator=(const televizor &dev);
     
     
-    void showInfo();
+
+    void showInfoPret();
+
+    void showInfoProducator();
+
+    
         
         
 };

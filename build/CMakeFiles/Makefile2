@@ -160,9 +160,9 @@ CMakeFiles/lib2.dir/clean:
 # Target rules for target CMakeFiles/proj1.dir
 
 # All Build rule for target.
-CMakeFiles/proj1.dir/all: CMakeFiles/lib4.dir/all
 CMakeFiles/proj1.dir/all: CMakeFiles/lib1.dir/all
 CMakeFiles/proj1.dir/all: CMakeFiles/lib2.dir/all
+CMakeFiles/proj1.dir/all: CMakeFiles/lib4.dir/all
 CMakeFiles/proj1.dir/all: CMakeFiles/lib3.dir/all
 	$(MAKE) -f CMakeFiles/proj1.dir/build.make CMakeFiles/proj1.dir/depend
 	$(MAKE) -f CMakeFiles/proj1.dir/build.make CMakeFiles/proj1.dir/build

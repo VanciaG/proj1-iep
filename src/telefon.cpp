@@ -24,7 +24,7 @@ telefon::telefon(int m) : device() {
         mem=m;
     }
     
-telefon::telefon(const telefon &dev) : device(dev.pret) {     //direct item 12
+telefon::telefon(const telefon &dev) : device(dev.pret) {     
         mem = dev.mem;
     }
 

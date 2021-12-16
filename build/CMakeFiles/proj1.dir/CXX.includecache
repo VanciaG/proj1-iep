@@ -45,6 +45,8 @@ cstdlib
 -
 device.hpp
 ../inc/device.hpp
+memory
+-
 
 /home/gabi/Desktop/proj1-iep/src/main.cpp
 ../inc/device.hpp
@@ -52,5 +54,7 @@ device.hpp
 ../inc/telefon.hpp
 -
 ../inc/televizor.hpp
+-
+iostream
 -
 

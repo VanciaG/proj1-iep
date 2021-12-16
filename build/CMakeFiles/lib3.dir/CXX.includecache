@@ -23,10 +23,14 @@ cstdlib
 -
 device.hpp
 /home/gabi/Desktop/proj1-iep/inc/device.hpp
+memory
+-
 
 /home/gabi/Desktop/proj1-iep/src/televizor.cpp
 ../inc/televizor.hpp
 /home/gabi/Desktop/proj1-iep/inc/televizor.hpp
 iostream
+-
+memory
 -
 

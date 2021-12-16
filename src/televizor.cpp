@@ -1,6 +1,7 @@
 #include "../inc/televizor.hpp"
 
 #include <iostream> 
+#include <memory>
 
 using namespace std;
 
@@ -48,11 +49,19 @@ televizor& televizor::operator=(const televizor &dev) {
     cout << "Televizor destroyed\n";
 }   */
     
-    void televizor::showInfo(){
+void televizor::showInfoPret(){
         
-        cout  << "Televizor, pret=" << device::showPret()<< " lei, " << "producator= " <<producator<< "\n";
+        cout  << "Televizor, pret=" << device::showPret()<< " lei " << "\n";
         
-    }
+}
+
+ void televizor::showInfoProducator(){
+        
+        cout  << "producator= " <<producator<< "\n";
+        
+}
+
+
 
 
 
