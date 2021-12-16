@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gabi/Desktop/proj1-iep/inc/casti.hpp
+string
+-
+cstring
+-
+cstdlib
+-
+
+/home/gabi/Desktop/proj1-iep/src/casti.cpp
+../inc/casti.hpp
+/home/gabi/Desktop/proj1-iep/inc/casti.hpp
+iostream
+-
+

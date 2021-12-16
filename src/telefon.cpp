@@ -1,17 +1,22 @@
 #include "../inc/telefon.hpp"
 #include "../inc/device.hpp"
+#include "../inc/casti.hpp"
 #include "device.cpp"
+#include "casti.cpp"
 #include <iostream> 
+#include <memory>
 
 using namespace std;
 
 
 
 telefon::telefon(): device(){
-        mem=0;
+    mem=0;
     }
     
-telefon::telefon(int p, int m) : device(p) {
+telefon::telefon(int p, int m, char *cul) : device(p) {
+        unique_ptr<casti> pc (new casti(cul));
+        c = move(pc);
         mem=m;
     }
     
@@ -19,13 +24,9 @@ telefon::telefon(int m) : device() {
         mem=m;
     }
     
-telefon::telefon(const telefon &dev) : device(dev.pret) {
+telefon::telefon(const telefon &dev) : device(dev.pret) {     //direct item 12
         mem = dev.mem;
     }
-
-telefon::~telefon(){
-    cout << "Telefon destroyed\n";
-}
 
 telefon& telefon::operator=(const telefon &dev) {
         if(this == &dev){
@@ -39,13 +40,21 @@ telefon& telefon::operator=(const telefon &dev) {
     
 void telefon::showInfo(){
         
-    cout  << "Telefon, pret=" << device::showPret()<< " lei, " << "mem=" << mem << "\n";
+        cout  << " pret=" << device::showPret()<< " lei, " << "mem=" << mem << " " ;
+        c->showInfo();
         
-    }
+}
 
+void telefon::changeCastiCuloare(char *x){
+        c->changeCuloare(x);
+          
+}
 
-
-
+void telefon::afisareCasti(){
+         c->showInfo();
+          
+}
+    
     
 
 

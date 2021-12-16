@@ -34,8 +34,6 @@ public:
     televizor(const televizor &dev);
        
     
-    ~televizor(); 
-
     televizor& operator=(const televizor &dev);
     
     

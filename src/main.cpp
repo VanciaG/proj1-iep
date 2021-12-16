@@ -6,35 +6,37 @@ int main()
 {
     
     
-    telefon ob(12,3), ob1(13,9), ob2;
-    //ob.showInfo();
-
-    ob2 = ob = ob1;    //multiple assignment
-    ob2.showInfo();
-
+    /*telefon ob(12,3);
     ob.showInfo();
     
-    telefon ob3(12,3);
-    ob3 = ob3;      //self-assignment
-    ob3 = ob;
-    /*telefon ob2(ob);
+    telefon ob2(ob);
     ob2.showInfo();
     
     telefon ob1(5);
     ob1.showInfo();
     
     telefon ob3(ob1);
-    ob3.showInfo();*/
+    ob3.showInfo();
     
     char s[11] = "samsung";
-    
-    televizor ob4(12, s), ob5(14,s), ob6;
-    //ob4.showInfo();
-    ob6 = ob4 = ob5;
-    ob6.showInfo();
-
-    ob4 = ob4;
-
+    //cout << s << endl;
+    //char *p = a;
+    televizor ob4(12, s);
     ob4.showInfo();
+    televizor ob5(ob4);
+    ob5.showInfo();
+    //deviceVideo ob6;
+    //ob6 = ob4 + ob5;
+    //ob6.showPret();*/
+
+    char s[11] = "alb";
+    casti ob1(s);
+
+    telefon ob2(12, 13, s);  //cand apelez asta telefon imi face si un casti de culoarea alb
+
+    char s1[11] = "negru";
+    ob2.changeCastiCuloare(s1);
+    ob2.showInfo();
+    
     return 0;
 }

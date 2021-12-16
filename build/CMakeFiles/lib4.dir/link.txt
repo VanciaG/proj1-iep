@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblib4.a  CMakeFiles/lib4.dir/src/casti.cpp.o
+/usr/bin/ranlib liblib4.a

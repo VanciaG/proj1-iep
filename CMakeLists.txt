@@ -18,16 +18,19 @@ endif()
 set(myfiles1 src/device.cpp inc/device.hpp)
 set(myfiles2 src/telefon.cpp inc/telefon.hpp)
 set(myfiles3 src/televizor.cpp inc/televizor.hpp)
+set(myfiles4 src/casti.cpp inc/casti.hpp)
 
 add_library(lib1 STATIC ${myfiles1})
 add_library(lib2 STATIC ${myfiles2})
 add_library(lib3 STATIC ${myfiles3})
+add_library(lib4 STATIC ${myfiles4})
 
 add_executable(${myproject} src/main.cpp)
 
 target_link_libraries(${myproject} PUBLIC lib1)
 target_link_libraries(${myproject} PUBLIC lib2)
 target_link_libraries(${myproject} PUBLIC lib3)
+target_link_libraries(${myproject} PUBLIC lib4)
 
 target_include_directories(${myproject} 
  PRIVATE src INTERFACE
